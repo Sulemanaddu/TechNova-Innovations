@@ -1,0 +1,22 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h2 {
+    color: #007BFF;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Contact Form */
+  #contact form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

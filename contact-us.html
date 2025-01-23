@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechNova Innovations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">TechNova</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+
+            <div class="row mb-4">
+                <div class="col-md-6 text-center">
+                    <div class="icon mb-3 text-primary">
+                        <i class="fa-solid fa-map-marker-alt fa-3x"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>123 Innovation Drive, Tech City, TX</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="icon mb-3 text-success">
+                        <i class="fa-solid fa-envelope fa-3x"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>contact@technova.com</p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6 text-center">
+                    <div class="icon mb-3 text-danger">
+                        <i class="fa-solid fa-phone fa-3x"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="icon mb-3 text-warning">
+                        <i class="fa-solid fa-clock fa-3x"></i>
+                    </div>
+                    <h3>Business Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 6:00 PM <br> Sat: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+
+            <h3 class="text-center mb-4">Send Us a Message</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="rounded bg-light shadow-sm p-3" style="height: 300px;">
+                        <h4 class="text-center">Find Us</h4>
+                        <!-- Add Google Map -->
+                        <div id="map" style="height: 250px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2025 TechNova Innovations. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function initMap() {
+            const location = { lat: 40.748817, lng: -73.985428 }; // Example coordinates
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location,
+            });
+            new google.maps.Marker({ position: location, map: map });
+        }
+    </script>
+    <script src="https://www.google.com/maps/place/Koregaon+Park,+Pune,+Maharashtra/@18.5372962,73.8842943,15z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3bc2bf2e67461101:0x828d43bf9d9ee343!2sPune,+Maharashtra!3b1!8m2!3d18.5204303!4d73.8567437!16zL20vMDE1eTJx!3m5!1s0x3bc2c04e382a1275:0x1ec8ee3be12dcff2!8m2!3d18.5362084!4d73.8939748!16s%2Fm%2F0cm923r?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D" async defer></script>
+</body>
+</html>
